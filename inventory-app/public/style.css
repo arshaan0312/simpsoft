@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #64748b;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.row .card {
+  flex: 1 1 320px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.92rem;
+}
+
+th {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+tr.out-of-stock {
+  background: #fef2f2;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.status-badge.out {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.status-badge.ok {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.empty {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: #475569;
+  gap: 4px;
+}
+
+input {
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+button {
+  margin-top: 6px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#form-message {
+  min-height: 1.2em;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+#form-message.success {
+  color: #15803d;
+}
+
+#form-message.error {
+  color: #b91c1c;
+}
+
+#log-feed {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+#log-feed li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.88rem;
+}
+
+#log-feed li:last-child {
+  border-bottom: none;
+}
+
+#log-feed .log-time {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.78rem;
+  margin-top: 2px;
+}
